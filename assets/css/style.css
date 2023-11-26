@@ -149,10 +149,12 @@ h6 {
   }
 }
 
-@media only screen and  (max-width: 988px){
-  .login-btn{
-    width: 100%;
-    margin-top: 1rem;
+@media only screen and (max-width: 988px){
+  .navbar-brand{
+    display: none;
+  }
+  .navbar-toggler{
+    margin-right: auto;
   }
 }
 
