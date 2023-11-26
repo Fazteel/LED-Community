@@ -169,8 +169,6 @@
    */
 
 
-
-
   window.addEventListener('load', () => {
     let teamContainer = select('.team-container');
     if (teamContainer) {
@@ -234,10 +232,25 @@
     })
   });
 
-  /**
-   * Initiate Pure Counter 
-   */
   new PureCounter();
 
 })()
+
+let navbar = document.querySelector('.navbar');
+let navbarBrand = document.getElementById('navbarBrand');
+let originalLogo = 'assets/img/logo-putih.svg';
+let scrolledLogo = 'assets/img/logo-hitam.svg';
+
+document.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    navbar.classList.add('scroll');
+    navbarBrand.innerHTML = `<img src="${scrolledLogo}" class="img-fluid image me-1">LED Community`;
+    navbarBrand.style.color = '#000'
+  } else {
+    navbar.classList.remove('scroll');
+    navbarBrand.innerHTML = `<img src="${originalLogo}" class="img-fluid image me-1">LED Community`;
+    navbar.style.transition = '.4s ease';
+    navbarBrand.style.color = '#fff'
+  }
+});
 
