@@ -40,7 +40,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ffb700;
+  background: #e2209e;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -116,6 +116,7 @@ h6 {
 }
 
 #navbar .logo {
+  color: white;
   font-size: 28px;
   margin: 0;
   padding: 0;
@@ -128,6 +129,16 @@ h6 {
 #navbar .logo img {
   max-height: 30px;
   width: auto;
+}
+
+.header-scrolled {
+  width: 90%;
+  background: #ececec;
+  margin-top: 2rem;
+  margin-inline: auto;
+  padding: 15px 0;
+  border-radius: 60px;
+  animation: fadedown 0.4s ease 1s forwards;
 }
 
 .login-btn {
@@ -149,17 +160,6 @@ h6 {
 .nav-link {
   color: #ffb700;
   font-weight: 500;
-}
-
-.scroll {
-  width: 90%;
-  background: #fff;
-  margin-top: 2rem;
-  margin-inline: auto;
-  padding: 15px 0;
-  border-radius: 60px;
-  border-bottom: 1px solid #e6f2fb;
-  animation: fadedown 0.4s ease 1s forwards;
 }
 
 .navbar-brand:hover {
@@ -221,7 +221,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -448,8 +448,6 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team{}
-
 .team .container{
   padding-inline: 60px;
 }
@@ -554,14 +552,14 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #444444;
+  color: #fff;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .team #team-flters li:hover,
 .team #team-flters li.filter-active {
-  color: #2487ce;
+  color: #ffb700;
 }
 
 .team #team-flters li:last-child {
@@ -580,7 +578,7 @@ grid item
 #footer {
   color: #444444;
   font-size: 14px;
-  background: #f8fbfe;
+  background: #ffb700;
   box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
 }
 

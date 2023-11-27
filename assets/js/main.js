@@ -35,26 +35,6 @@
   }
 
   /**
-   * Navbar links active state on scroll
-   */
-  let navbarlinks = select('#navbar .scrollto', true)
-  const navbarlinksActive = () => {
-    let position = window.scrollY + 200
-    navbarlinks.forEach(navbarlink => {
-      if (!navbarlink.hash) return
-      let section = select(navbarlink.hash)
-      if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
-      } else {
-        navbarlink.classList.remove('active')
-      }
-    })
-  }
-  window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
-
-  /**
    * Scrolls to an element with header offset
    */
   const scrollto = (el) => {
@@ -107,16 +87,6 @@
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
   })
-
-  /**
-   * Mobile nav dropdowns activate
-   */
-  on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
-    }
-  }, true)
 
   /**
    * Scrool with ofset on links with a class name .scrollto
@@ -204,23 +174,6 @@
   });
 
   /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
    * Animation on scroll
    */
   window.addEventListener('load', () => {
@@ -238,19 +191,27 @@
 
 let navbar = document.querySelector('.navbar');
 let navbarBrand = document.getElementById('navbarBrand');
+let navbarToggler = document.querySelector('.navbar-toggler');
+let navbarLink = document.querySelector('.nav-link');
 let originalLogo = 'assets/img/logo-putih.svg';
 let scrolledLogo = 'assets/img/logo-hitam.svg';
 
 document.addEventListener('scroll', () => {
-  if (window.scrollY > 100) {
-    navbar.classList.add('scroll');
+  if (window.scrollY > 19) {
+    navbar.classList.add('header-scrolled');
+    navbar.classList.remove('navbar-dark');
+    navbar.classList.add('shadow');
     navbarBrand.innerHTML = `<img src="${scrolledLogo}" class="img-fluid image me-1">LED Community`;
-    navbarBrand.style.color = '#000'
+    navbarBrand.style.color = '#000';
+    navbarToggler.style.color = '#000';
   } else {
-    navbar.classList.remove('scroll');
+    navbar.classList.remove('header-scrolled');
+    navbar.classList.add('navbar-dark');
+    navbar.classList.remove('shadow');
     navbarBrand.innerHTML = `<img src="${originalLogo}" class="img-fluid image me-1">LED Community`;
+    navbarBrand.style.color = '#fff';
+    navbarToggler.style.color = '#fff';
     navbar.style.transition = '.4s ease';
-    navbarBrand.style.color = '#fff'
   }
 });
 
