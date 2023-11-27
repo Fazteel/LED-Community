@@ -335,7 +335,7 @@ section {
 }
 
 .division .icon-box:hover {
-  transform: translateY(-10px);
+  transform: scale(1.1);
 }
 
 .division .icon-box .icon {
