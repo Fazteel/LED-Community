@@ -204,6 +204,7 @@ document.addEventListener('scroll', () => {
     navbarBrand.innerHTML = `<img src="${scrolledLogo}" class="img-fluid image me-1">LED Community`;
     navbarBrand.style.color = '#000';
     navbarToggler.style.color = '#000';
+    navbarLink.style.color = '#000';
   } else {
     navbar.classList.remove('header-scrolled');
     navbar.classList.add('navbar-dark');
@@ -211,6 +212,7 @@ document.addEventListener('scroll', () => {
     navbarBrand.innerHTML = `<img src="${originalLogo}" class="img-fluid image me-1">LED Community`;
     navbarBrand.style.color = '#fff';
     navbarToggler.style.color = '#fff';
+    navbarLink.style.color = '#fff';
     navbar.style.transition = '.4s ease';
   }
 });

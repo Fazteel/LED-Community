@@ -180,7 +180,6 @@ h6 {
 
 .nav-link:hover{
   transform: translateY(-5px);
-  color: #fff;
 }
 
 @keyframes fadedown {
@@ -249,7 +248,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about{
-  background-color: #9364ed;
+  background-color: #231a56;
 }
 
 .about .content {
@@ -328,11 +327,15 @@ section {
 
 .division .icon-box {
   text-align: center;
-  padding: 40px;
+  padding: 30px;
   transition: all ease-in-out 0.3s;
   background: #fff;
   border-radius: 40px;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+}
+
+.division .icon-box:hover {
+  transform: translateY(-10px);
 }
 
 .division .icon-box .icon {
@@ -464,7 +467,7 @@ section {
   overflow: hidden;
   text-align: center;
   border-radius: 4px;
-  background: #fff;
+  background: #231a56;
   box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
 }
 
@@ -513,7 +516,7 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 15px;
-  color: #124265;
+  color: #ffb700;
   font-family: 'Archivo Narrow', sans-serif;
 }
 
