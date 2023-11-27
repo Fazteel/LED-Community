@@ -388,20 +388,32 @@ section {
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 
-.division .iconbox-orange i {
-  color: #ffa76e;
+.division .iconbox-light-blue i {
+  color: #07cbf5;
 }
 
-.division .iconbox-orange:hover .icon i {
+.division .iconbox-light-blue:hover .icon i {
   color: #fff;
 }
 
-.division .iconbox-orange:hover .icon path {
-  fill: #ffa76e;
+.division .iconbox-light-blue:hover .icon path {
+  fill: #07cbf5;
+}
+
+.division .iconbox-dark-purple i {
+  color: #3e3789;
+}
+
+.division .iconbox-dark-purple:hover .icon i {
+  color: #fff;
+}
+
+.division .iconbox-dark-purple:hover .icon path {
+  fill: #3e3789;
 }
 
 .division .iconbox-pink i {
-  color: #e80368;
+  color: #e2209e;
 }
 
 .division .iconbox-pink:hover .icon i {
@@ -409,11 +421,11 @@ section {
 }
 
 .division .iconbox-pink:hover .icon path {
-  fill: #e80368;
+  fill: #e2209e;
 }
 
 .division .iconbox-yellow i {
-  color: #ffbb2c;
+  color: #ffb700;
 }
 
 .division .iconbox-yellow:hover .icon i {
@@ -421,31 +433,19 @@ section {
 }
 
 .division .iconbox-yellow:hover .icon path {
-  fill: #ffbb2c;
+  fill: #ffb700;
 }
 
-.division .iconbox-red i {
-  color: #ff5828;
+.division .iconbox-ligh-purple i {
+  color: #9464ed;
 }
 
-.division .iconbox-red:hover .icon i {
+.division .iconbox-ligh-purple:hover .icon i {
   color: #fff;
 }
 
-.division .iconbox-red:hover .icon path {
-  fill: #ff5828;
-}
-
-.division .iconbox-teal i {
-  color: #11dbcf;
-}
-
-.division .iconbox-teal:hover .icon i {
-  color: #fff;
-}
-
-.division .iconbox-teal:hover .icon path {
-  fill: #11dbcf;
+.division .iconbox-ligh-purple:hover .icon path {
+  fill: #9464ed;
 }
 
 /*--------------------------------------------------------------
