@@ -248,7 +248,8 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background-color: #231a56;
+  background: linear-gradient(65deg, #124265, #231a56);
+  border-radius: 10px;
 }
 
 .about .content {
@@ -329,11 +330,11 @@ section {
 /*--------------------------------------------------------------
 # division
 --------------------------------------------------------------*/
-.division{
-  background: #ffb700;
+.division {
+  background: linear-gradient(45deg, #e2209e, #ffb700);
   background-size: cover;
   padding: 60px 30px;
-  width: 90%;
+  width: 95%;
   margin-top: 2rem;
   margin-inline: auto;
   border-radius: 20px;
