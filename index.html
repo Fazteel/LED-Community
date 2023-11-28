@@ -101,9 +101,9 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
+          <div class="col-lg-6 video-box" data-aos="fade-right" data-aos-delay="100">
             <img src="assets/img/about.svg" class="img-fluid" alt="">
-          </div>
+        </div>        
 
           <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
             <h3>Tentang LED Community</h3>
@@ -112,17 +112,118 @@
               komunitas di SMK PGRI Telagasari yang berfokus pada bidang Development <br>
               Terdapat beberapa pembagian tim di komunitas ini yaitu :
             </p>
-            <ul>
-              <li><i class="bx bx-check-double"></i> Tim Front End Developer</li>
-              <li><i class="bx bx-check-double"></i> Tim Web Developer</li>
-              <li><i class="bx bx-check-double"></i> UI Desainer</li>
-              <li><i class="bx bx-check-double"></i> Content Creator</li>
-              <li><i class="bx bx-check-double"></i> Dokumentator</li>
-            </ul>
-            <p class="text-justify lh-base">
-              Komunitas ini mengajarkan siswa untuk bekerja sama dalam membangun sebuah produk digital yang dapat
-              digunakan untuk digitalisasi di SMK PGRI Telagasari.
-            </p>
+
+            <!-- Bootstrap 5 Accordion -->
+            <div class="accordion accordion-flush" id="accordionExample">
+              <!-- Front End Developer -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="frontEndDeveloper">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFrontEndDeveloper" aria-expanded="true"
+                    aria-controls="collapseFrontEndDeveloper">
+                    <i class="bi bi-code-slash"></i> Tim Front End Developer
+                  </button>
+                </h2>
+                <div id="collapseFrontEndDeveloper" class="accordion-collapse collapse"
+                  aria-labelledby="frontEndDeveloper" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="fst-normal text-justify lh-base">
+                      Tugas seorang front-end developer adalah merancang dan mengimplementasikan tampilan antarmuka
+                      pengguna (UI) dari sebuah aplikasi atau situs web. Front-end developer bekerja dengan teknologi
+                      web seperti HTML, CSS, dan JavaScript untuk menciptakan pengalaman pengguna yang menarik dan
+                      responsif.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Web Developer -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="webDeveloper">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseWebDeveloper" aria-expanded="true" aria-controls="collapseWebDeveloper">
+                    <i class="bi bi-globe"></i> Tim Web Developer
+                  </button>
+                </h2>
+                <div id="collapseWebDeveloper" class="accordion-collapse collapse" aria-labelledby="webDeveloper"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="fst-normal text-justify lh-base">Seorang web developer bertanggung jawab untuk merancang, mengembangkan, dan memelihara aplikasi
+                      web. Mereka menciptakan antarmuka pengguna yang menarik dan responsif dengan menggunakan
+                      keterampilan HTML, CSS, dan JavaScript di sisi frontend, serta membangun dan memelihara server,
+                      database, dan logika bisnis di sisi backend.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- UI Designer -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="uiDesigner">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseUiDesigner" aria-expanded="true" aria-controls="collapseUiDesigner">
+                    <i class="bx bx-layer"></i> UI Desainer
+                  </button>
+                </h2>
+                <div id="collapseUiDesigner" class="accordion-collapse collapse" aria-labelledby="uiDesigner"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="fst-normal text-justify lh-base">
+
+                      Seorang UI designer memiliki tanggung jawab utama untuk merancang tampilan antarmuka pengguna (UI)
+                      yang estetis dan berfungsi baik dalam aplikasi atau situs web. Dengan menggunakan keterampilan
+                      dalam desain grafis, pemilihan warna, tipografi, dan elemen-elemen desain lainnya, UI designer
+                      menciptakan layout yang intuitif dan menyediakan pengalaman pengguna yang optimal.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Content Creator -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="contentCreator">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseContentCreator" aria-expanded="true"
+                    aria-controls="collapseContentCreator">
+                    <i class="bi bi-vector-pen"></i> Content Creator
+                  </button>
+                </h2>
+                <div id="collapseContentCreator" class="accordion-collapse collapse" aria-labelledby="contentCreator"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="fst-normal text-justify lh-base">
+
+                      Seorang content creator memiliki tanggung jawab untuk menciptakan dan mengelola beragam konten
+                      yang menarik dan relevan sesuai dengan tujuan pemasaran atau platform tertentu. Tugas mereka
+                      melibatkan pengembangan ide, penulisan teks, dan produksi materi.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Dokumentator -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="dokumentator">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseDokumentator" aria-expanded="true" aria-controls="collapseDokumentator">
+                    <i class="bi bi-vector-pen"></i> Dokumentator
+                  </button>
+                </h2>
+                <div id="collapseDokumentator" class="accordion-collapse collapse" aria-labelledby="dokumentator"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="fst-normal text-justify lh-base">
+
+                      Seorang dokumentator memiliki tanggung jawab untuk membuat, mengorganisir, dan memelihara dokumen
+                      atau catatan yang terkait dengan proyek, produk, atau proses tertentu. Tugas utama mereka
+                      melibatkan pembuatan dokumentasi yang jelas, komprehensif, dan mudah dipahami, yang dapat mencakup
+                      panduan pengguna, manual teknis, spesifikasi produk, atau prosedur operasional.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
 
         </div>
@@ -144,11 +245,9 @@
             <div class="icon-box iconbox-ligh-purple">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572">
-                  </path>
+                  <circle cx="300" cy="300" r="250" fill="#f5f5f5" stroke="none" stroke-width="0" />
+                  <i class="bi bi-code-slash"></i>
                 </svg>
-                <i class="bi bi-code-slash"></i>
               </div>
               <h4><a href="">Front End Developer</a></h4>
             </div>
@@ -158,11 +257,9 @@
             <div class="icon-box iconbox-dark-purple ">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572">
-                  </path>
+                  <circle cx="300" cy="300" r="250" fill="#f5f5f5" stroke="none" stroke-width="0" />
+                  <i class="bi bi-globe"></i>
                 </svg>
-                <i class="bi bi-globe"></i>
               </div>
               <h4><a href="">Web Developer</a></h4>
             </div>
@@ -172,11 +269,9 @@
             <div class="icon-box iconbox-pink">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572">
-                  </path>
+                  <circle cx="300" cy="300" r="250" fill="#f5f5f5" stroke="none" stroke-width="0" />
+                  <i class="bx bx-layer"></i>
                 </svg>
-                <i class="bx bx-layer"></i>
               </div>
               <h4><a href="">UI Designer</a></h4>
             </div>
@@ -186,12 +281,11 @@
             <div class="icon-box iconbox-light-blue">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572">
-                  </path>
+                  <circle cx="300" cy="300" r="250" fill="#f5f5f5" stroke="none" stroke-width="0" />
+                  <i class="bi bi-vector-pen"></i>
                 </svg>
-                <i class="bi bi-vector-pen"></i>
               </div>
+
               <h4><a href="">Creative</a></h4>
             </div>
           </div>
@@ -227,12 +321,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Fahmi.jpg" class="img-fluid">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Fahmi Andika Setiono</h4>
@@ -245,12 +333,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Hario.jpg" class="img-fluid">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Hario Saloko, S.Kom</h4>
@@ -263,12 +345,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Malda.jpg" class="img-fluid">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Malda Soraya Farhatien</h4>
@@ -285,12 +361,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Adit.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Adittia Sulaeman</h4>
@@ -303,12 +373,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Alya.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Alya Azhar Salsabila</h4>
@@ -321,12 +385,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Hilman.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Muhammad Hilman Nursalam</h4>
@@ -343,12 +401,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Asti.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Asti Sri Lestari</h4>
@@ -361,12 +413,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Fitra.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Fitra Muhammad Anugrah</h4>
@@ -379,12 +425,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Amelia.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Amelia</h4>
@@ -397,12 +437,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Mira.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Mirabela</h4>
@@ -415,12 +449,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Asep.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Asep Ridwan</h4>
@@ -433,12 +461,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Maulana.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Maulana Aenul Yakin</h4>
@@ -451,12 +473,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Fardhan.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Muhammad Fardhan Amirulloh</h4>
@@ -469,12 +485,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Firza.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Firza Gian Muharram</h4>
@@ -487,12 +497,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Anisa.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Anisa Rahayu</h4>
@@ -505,12 +509,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Riefida.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Riefida Destira Fidyaningtias</h4>
@@ -523,12 +521,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Maryani.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Maryani</h4>
@@ -541,12 +533,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Syifa.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Nurasyifa</h4>
@@ -559,12 +545,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Mini.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Mini Natalogi</h4>
@@ -577,12 +557,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Dian.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Dian Andini</h4>
@@ -595,12 +569,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Dzaki.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Dzaki Asyrof As Shodiq</h4>
@@ -613,12 +581,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Reno.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Reno Adikha Putra</h4>
@@ -631,12 +593,6 @@
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/Firman.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Firman Saputra</h4>
@@ -648,7 +604,8 @@
         </div>
 
       </div>
-    </section><!-- End Team Section -->
+    </section>
+    <!-- End Team Section -->
 
   </main><!-- End #main -->
 

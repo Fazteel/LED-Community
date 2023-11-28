@@ -247,7 +247,7 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about{
+.about {
   background-color: #231a56;
 }
 
@@ -261,23 +261,52 @@ section {
   color: #ffb700;
 }
 
+.about .content .accordion-item {
+  background-color: #231a56;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.about .content .accordion-button {
+  color: #ffb700;
+  background-color: #110828;
+}
+
+.about .content .accordion-button:not(.collapsed) {
+  color: #ffffff;
+  background-color: #110828;
+}
+
+.about .content .accordion-button:hover{
+  background-color: #ffb700;
+  color: #ffff;
+  transform: scale(1.02);
+}
+
+.about .content .accordion-button:focus {
+  box-shadow: none;
+}
+
+.about .content .accordion-body {
+  background-color: #ffffff;
+  color: #231a56;
+  padding: 10px;
+}
+
 .about .content ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .about .content ul li {
   padding-bottom: 10px;
-  padding-left: 28px;
   position: relative;
 }
 
-.about .content ul i {
-  font-size: 24px;
-  color: #2487ce;
-  position: absolute;
-  left: 0;
-  top: -2px;
+.about .content .accordion-button i {
+  color: #ffffff; /* Icon color */
+  margin-right: 10px;
 }
 
 .about .content p:last-child {
@@ -295,6 +324,7 @@ section {
     opacity: 0;
   }
 }
+
 
 /*--------------------------------------------------------------
 # division
@@ -396,7 +426,7 @@ section {
   color: #fff;
 }
 
-.division .iconbox-light-blue:hover .icon path {
+.division .iconbox-light-blue:hover .icon circle {
   fill: #07cbf5;
 }
 
@@ -408,7 +438,7 @@ section {
   color: #fff;
 }
 
-.division .iconbox-dark-purple:hover .icon path {
+.division .iconbox-dark-purple:hover .icon circle {
   fill: #3e3789;
 }
 
@@ -420,20 +450,8 @@ section {
   color: #fff;
 }
 
-.division .iconbox-pink:hover .icon path {
+.division .iconbox-pink:hover .icon circle {
   fill: #e2209e;
-}
-
-.division .iconbox-yellow i {
-  color: #ffb700;
-}
-
-.division .iconbox-yellow:hover .icon i {
-  color: #fff;
-}
-
-.division .iconbox-yellow:hover .icon path {
-  fill: #ffb700;
 }
 
 .division .iconbox-ligh-purple i {
@@ -444,7 +462,7 @@ section {
   color: #fff;
 }
 
-.division .iconbox-ligh-purple:hover .icon path {
+.division .iconbox-ligh-purple:hover .icon circle {
   fill: #9464ed;
 }
 
@@ -456,9 +474,9 @@ section {
 }
 
 .team-container,
-.profile-container{
+.profile-container {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
 }
 
 .team .member {
@@ -471,41 +489,13 @@ section {
   box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
 }
 
+.team .member:hover{
+  transform: scale(1.1);
+}
+
 .team .member .member-img {
   position: relative;
   overflow: hidden;
-}
-
-.team .member .social {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 40px;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.85);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  color: #124265;
-  margin: 0 10px;
-  display: inline-block;
-}
-
-.team .member .social a:hover {
-  color: #2487ce;
-}
-
-.team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-  line-height: 0;
 }
 
 .team .member .member-info {
