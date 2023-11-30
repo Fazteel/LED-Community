@@ -148,7 +148,7 @@ h6 {
   padding: 8px 20px;
   border-radius: 50px;
   text-decoration: none;
-  transition: 0.3s background-color;
+  transition: 0.3s;
 }
 
 .navbar-toggler {
@@ -554,15 +554,12 @@ section {
 .team #team-flters li:hover,
 .team #team-flters li.filter-active {
   color: #ffb700;
+  transform: translateY(-5px);
 }
 
 .team #team-flters li:last-child {
   margin-right: 0;
 }
-
-/*
-grid item
-*/
 
 .grid-item { width: 25%; }
 
